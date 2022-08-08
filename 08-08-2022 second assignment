@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() 
+{
+    int n,r,d=0,c=0;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+    r=n%10;
+    if(r%2==0)
+    d++;
+    else 
+    c++;
+    n=n/10;
+    }
+    if(c==d)
+    printf("FANCY NUMBER");
+    else
+    printf ("NOT FANCY NUMBER");
+    return 0;
+ }
+
+
+OUTPUT 1: 123456
+          FANCY NUMBER
+    
+OUTPUT 2: 12345
+          NOT FANCY NUMBER
